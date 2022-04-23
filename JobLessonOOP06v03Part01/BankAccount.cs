@@ -127,19 +127,9 @@ namespace JobLessonOOP06v03Part01
                 $"Тип счёта: {TypeBankAccount}" + "\n" +
                 $"======================================================== ");
         }
+
         /// <summary>
-        /// Метод вывода информации о пополнении банковского счёта.
-        /// </summary>
-        public void PrintPutOn()
-        {
-            Console.WriteLine(
-                $"Счёт (Аккаунт) № {NumberBankAccount}" + "\n" +
-                $"Сумма {SumPutOnBankAccount} пополнена на счёт № {NumberBankAccount}. " + "\n" +
-                $"Текущий балланс на счёте № {NumberBankAccount} составляет: {BallanceBankAccount}" + "\n" +
-                $"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ");
-        }
-        /// <summary>
-        /// Метод вывода информации об ошибке снятия с средств с банковского счёта
+        /// Метод вывода информации об ошибке снятия средств с банковского счёта
         /// </summary>
         public void PrintWithdrowError()
         {
@@ -150,7 +140,7 @@ namespace JobLessonOOP06v03Part01
                 $"======================================================== ");
         }
         /// <summary>
-        /// Метод вывода информации об успешном снятии с средств с банковского счёта
+        /// Метод вывода информации об успешном снятии средств с банковского счёта
         /// </summary>
         public void PrintWithdrowSucsess()
         {
@@ -159,6 +149,17 @@ namespace JobLessonOOP06v03Part01
                 $"Сумма {SumWithdrawFormBankAccount} снята со счёта № {NumberBankAccount}. " + "\n" +
                 $"Текущий балланс на счёте № {NumberBankAccount} составляет: {BallanceBankAccount}" + "\n" +
                 $"-------------------------------------------------------- ");
+        }
+        /// <summary>
+        /// Метод вывода информации о пополнении банковского счёта.
+        /// </summary>
+        public void PrintPutOn()
+        {
+            Console.WriteLine(
+                $"Счёт (Аккаунт) № {NumberBankAccount}" + "\n" +
+                $"Сумма {SumPutOnBankAccount} пополнена на счёт № {NumberBankAccount}. " + "\n" +
+                $"Текущий балланс на счёте № {NumberBankAccount} составляет: {BallanceBankAccount}" + "\n" +
+                $"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ");
         }
     }
 }
